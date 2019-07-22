@@ -4,7 +4,7 @@
 #
 # Installs tmux
 
-if [ "$(uname -s)" == "Darwin" ]
+if [ "$(uname -s)" = "Darwin" ]
 then
   if test ! $(which tmux)
   then
