@@ -1,7 +1,7 @@
 # tmux
 
-tmux is an extension for the [bedrock](https://github.com/bedrock-env/ack)
-project to install and provide tmux in the bedrock environment.
+tmux is an extension for the [Bedrock](https://github.com/bedrock-env/bedrock)
+project to install and provide tmux and related configuration.
 
 ### Provides
 

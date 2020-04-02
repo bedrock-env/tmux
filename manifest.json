@@ -1,0 +1,29 @@
+{
+  "author": "Ben Mills",
+  "platforms": {
+    "macos": {
+      "homebrew": {
+        "install_steps": [
+          {
+            "binary": "brew",
+            "command": "install tmux",
+            "runif": "[ `which tmux` != \"/usr/local/bin/tmux\" ]"
+          }
+        ],
+        "update_steps": [
+          {
+            "binary": "brew",
+            "command": "upgrade tmux"
+          }
+        ]
+      },
+      "files": [
+        {
+          "source": "tmux.conf",
+          "target": "$HOME/.tmux.conf",
+          "operation": "symlink"
+        }
+      ]
+    }
+  }
+}
