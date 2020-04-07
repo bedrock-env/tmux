@@ -24,6 +24,30 @@
           "operation": "symlink"
         }
       ]
+    },
+    "ubuntu": {
+      "apt": {
+        "install_steps": [
+          {
+            "binary": "apt-get",
+            "command": "install tmux",
+            "runif": "[ `which tmux` != \"/usr/local/bin/tmux\" ]"
+          }
+        ],
+        "update_steps": [
+          {
+            "binary": "apt-get",
+            "command": "upgrade tmux"
+          }
+        ]
+      },
+      "files": [
+        {
+          "source": "tmux.conf",
+          "target": "$HOME/.tmux.conf",
+          "operation": "symlink"
+        }
+      ]
     }
   }
 }
