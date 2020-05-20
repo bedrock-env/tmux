@@ -9,12 +9,6 @@
             "command": "install tmux",
             "runif": "[ `which tmux` != \"/usr/local/bin/tmux\" ]"
           }
-        ],
-        "update_steps": [
-          {
-            "binary": "brew",
-            "command": "upgrade tmux"
-          }
         ]
       },
       "files": [
@@ -32,12 +26,6 @@
             "binary": "apt-get",
             "command": "install tmux",
             "runif": "[ `which tmux` != \"/usr/local/bin/tmux\" ]"
-          }
-        ],
-        "update_steps": [
-          {
-            "binary": "apt-get",
-            "command": "upgrade tmux"
           }
         ]
       },
